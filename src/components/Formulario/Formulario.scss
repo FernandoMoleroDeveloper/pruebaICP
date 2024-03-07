@@ -1,2 +1,97 @@
 @import "../../styles/variables.scss";
 @import "../../styles/media-queries.scss";
+
+.form {
+  max-width: 936px;
+  align-items: left;
+  justify-content: start;
+  text-align: left;
+
+  &__title {
+    color: $font-color-light;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: $font-color-light;
+    color: $font-color-light;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 134px;
+    background-color: $button-primary;
+    color: $background-dark;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $button-hover;
+      color: $font-color-light;
+    }
+  }
+
+  &__container-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+
+  &__label {
+    display: block;
+    width: 100%;
+    color: $font-color-light;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  &__input {
+    width: 295px;
+    height: 40px;
+    color: $font-color-dark;
+    font-weight: 400;
+
+    &--big {
+      width: 615px;
+      height: 40px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+  }
+  &__mail {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__error {
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

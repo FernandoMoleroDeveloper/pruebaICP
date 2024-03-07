@@ -1,2 +1,70 @@
 @import "../../styles/variables.scss";
 @import "../../styles/media-queries.scss";
+
+.navbar {
+  background-color: $background-dark;
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  &__logo {
+    width: 100px;
+    height: auto;
+    margin: 0 20px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 0 20px;
+  }
+
+  &__link {
+    color: $font-color-light;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $font-color-alternative;
+      text-decoration: underline;
+    }
+  }
+
+  &__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  &__user-icon {
+    width: 24px;
+    height: auto;
+    margin-right: 8px;
+  }
+
+  &__user-name {
+    color: $font-color-light;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__user-avatar {
+    width: 46px;
+    height: auto;
+  }
+}

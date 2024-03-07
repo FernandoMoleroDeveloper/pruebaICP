@@ -1,2 +1,46 @@
 @import "../../styles/variables.scss";
 @import "../../styles/media-queries.scss";
+
+.movies {
+  max-width: 1576px;
+  margin: 0 auto;
+  text-align: left;
+
+  &__text {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: $font-color-light;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__breadcrumb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+
+    &--text {
+      color: $font-color-grey;
+      font-size: 20px;
+    }
+    &--text-selected {
+      color: $font-color-alternative;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,2 +1,58 @@
 @import "../../styles/variables.scss";
 @import "../../styles/media-queries.scss";
+
+.movieCard {
+  &__img {
+    width: auto;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  &__stars {
+    width: 20px;
+    height: auto;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 10px 5px;
+  }
+
+  &__rating-number {
+    color: $font-color-grey;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+  }
+
+  &__title {
+    color: $font-color-light;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2px 0px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__year &__duration {
+    color: $font-color-light;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+  }
+}
